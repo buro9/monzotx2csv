@@ -2,27 +2,24 @@ package csv
 
 import (
 	"encoding/csv"
-	"fmt"
 	"os"
 
 	"github.com/buro9/monzotx2csv/monzoapi"
 )
 
-// excelTime represents time in the most Excel friendly manner, subseconds
-// only work in `en` locale computers that use `.` delimits so these are not
-// used here.
-const excelTime string = "2006-01-02 15:04:05"
+// CSV will take a slice of transactions and output as CSV according to the
+// fields and options defined
+func CSV(txs monzoapi.Transactions, options Options) error {
+	options.Validate()
 
-func CSV(txs monzoapi.Transactions) error {
-	// Output as CSV to os.Stdout
 	var rows [][]string
+	rows = append(rows, options.Fields)
 
 	for _, tx := range txs.Transactions {
-		row := []string{
-			tx.Created.Format(excelTime),
-			fmt.Sprintf("%d", tx.Amount),
+		var row []string
+		for _, field := range options.Fields {
+			row = append(row, PrintField(tx, field, options))
 		}
-
 		rows = append(rows, row)
 	}
 

@@ -1,11 +1,14 @@
 package monzoapi
 
+// Transaction is a row in your Monzo account, it may be zero-value (active card
+// check)
 type Transaction struct {
 	ID                string            `json:"id"`
 	Created           Time              `json:"created"`
 	Description       string            `json:"description"`
 	Amount            int64             `json:"amount"`
 	Currency          string            `json:"currency"`
+	DeclineReason     string            `json:"decline_reason"`
 	Merchant          *Merchant         `json:"merchant,omitempty"`
 	Notes             string            `json:"notes,omitempty"`
 	Metadata          map[string]string `json:"metadata"`

@@ -29,7 +29,26 @@ func main() {
 		os.Exit(1)
 	}
 
-	if err := csv.CSV(txs); err != nil {
+	// Output the CSV
+	options := csv.Options{
+		// These are my options, feel free to change them, check out
+		// csv/options.go and you'll see that if you don't supply any options we
+		// will default them anyway.
+		Fields: []string{
+			"created",
+			"settled",
+			"decline_reason",
+			"category",
+			"merchant",
+			"merchant.address.postcode",
+			"local_amount",
+			"amount",
+			"account_balance",
+			"notes",
+		},
+	}
+
+	if err := csv.CSV(txs, options); err != nil {
 		fmt.Println(err.Error())
 		os.Exit(1)
 	}

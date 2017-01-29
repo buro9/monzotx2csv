@@ -1,5 +1,7 @@
 package monzoapi
 
+// Attachment describes an attachment against a transaction, typically a
+// photograph of a receipt
 type Attachment struct {
 	Created    Time   `json:"created"`
 	ExternalID string `json:"external_id"`

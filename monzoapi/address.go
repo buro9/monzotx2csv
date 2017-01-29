@@ -1,5 +1,6 @@
 package monzoapi
 
+// Address describes the address of a merchant
 type Address struct {
 	ShortFormatted string  `json:"short_formatted"`
 	Formatted      string  `json:"formatted"`

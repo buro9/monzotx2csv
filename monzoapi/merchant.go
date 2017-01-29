@@ -1,5 +1,6 @@
 package monzoapi
 
+// Merchant describes a retailer
 type Merchant struct {
 	ID              string            `json:"id"`
 	GroupID         string            `json:"group_id"`
@@ -11,7 +12,7 @@ type Merchant struct {
 	Online          bool              `json:"online,omitempty"`
 	ATM             bool              `json:"atm,omitempty"`
 	Address         Address           `json:"address"`
-	Updated         string            `json:"updated"`
+	Updated         Time              `json:"updated"`
 	Metadata        map[string]string `json:"metadata"`
 	DisableFeedback bool              `json:"disable_feedback,omitempty"`
 }

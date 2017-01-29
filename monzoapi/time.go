@@ -5,14 +5,18 @@ import (
 	"time"
 )
 
+// Time is a time.Time and is here to allow custom JSON unmarshalling so that
+// we can read Monzo time format.
 type Time struct {
 	time.Time
 }
 
+// UnmarshalJSON is used by json.Unmarshal to parse a string into the Time
+// struct using a custom format
 func (t *Time) UnmarshalJSON(b []byte) error {
 	s := strings.Trim(string(b), `"`)
 	if s == "" {
-		// nullable time, i.e. the Transaction.Settled field
+		// null time, i.e. the Transaction.Settled field
 		// use t.IsZero() to detect
 		return nil
 	}
