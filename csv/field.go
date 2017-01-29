@@ -26,7 +26,12 @@ func PrintField(
 	case field == "description":
 		return tx.Description
 	case field == "amount":
-		amount, _ := monzoapi.FormatAmount(tx.Currency, tx.Amount, options.CurrenciesWithSymbol, options.AccountingStyle)
+		amount, _ := monzoapi.FormatAmount(
+			tx.Currency,
+			tx.Amount,
+			options.CurrenciesWithSymbol,
+			options.AccountingStyle,
+		)
 		return amount
 	case field == "currency":
 		return tx.Currency
@@ -174,7 +179,12 @@ func PrintField(
 		}
 		return ""
 	case field == "account_balance":
-		amount, _ := monzoapi.FormatAmount(tx.Currency, tx.AccountBalance, options.CurrenciesWithSymbol, options.AccountingStyle)
+		amount, _ := monzoapi.FormatAmount(
+			tx.Currency,
+			tx.AccountBalance,
+			options.CurrenciesWithSymbol,
+			options.AccountingStyle,
+		)
 		return amount
 	case field == "attachments":
 		if tx.Attachments != nil && len(*tx.Attachments) > 0 {
@@ -193,7 +203,12 @@ func PrintField(
 		}
 		return ""
 	case field == "local_amount":
-		amount, _ := monzoapi.FormatAmount(tx.LocalCurrency, tx.LocalAmount, options.CurrenciesWithSymbol, options.AccountingStyle)
+		amount, _ := monzoapi.FormatAmount(
+			tx.LocalCurrency,
+			tx.LocalAmount,
+			options.CurrenciesWithSymbol,
+			options.AccountingStyle,
+		)
 		return amount
 	case field == "local_currency":
 		return tx.LocalCurrency
