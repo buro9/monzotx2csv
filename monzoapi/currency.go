@@ -120,7 +120,7 @@ func setCurrencies() {
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "A$1",
+			Grapheme:    "A$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -230,7 +230,7 @@ func setCurrencies() {
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "BD$1",
+			Grapheme:    "BD$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -270,12 +270,12 @@ func setCurrencies() {
 		Name:  "Brazilian Real",
 		Scale: 2,
 		Symbol: &Symbol{
-			Grapheme:    "R$1",
+			Grapheme:    "R$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "R$1",
+			Grapheme:    "R$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -345,12 +345,12 @@ func setCurrencies() {
 		Name:  "Belize Dollar",
 		Scale: 2,
 		Symbol: &Symbol{
-			Grapheme:    "BZ$1",
+			Grapheme:    "BZ$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "BZ$1",
+			Grapheme:    "BZ$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -365,7 +365,7 @@ func setCurrencies() {
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "CA$1",
+			Grapheme:    "CA$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -460,12 +460,12 @@ func setCurrencies() {
 		Name:  "Cuban Peso",
 		Scale: 2,
 		Symbol: &Symbol{
-			Grapheme:    "$1MN",
+			Grapheme:    "$MN",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "$1MN",
+			Grapheme:    "$MN",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -510,12 +510,12 @@ func setCurrencies() {
 		Name:  "Dominican Peso",
 		Scale: 2,
 		Symbol: &Symbol{
-			Grapheme:    "RD$1",
+			Grapheme:    "RD$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "RD$1",
+			Grapheme:    "RD$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -595,7 +595,7 @@ func setCurrencies() {
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "FJ$1",
+			Grapheme:    "FJ$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -705,7 +705,7 @@ func setCurrencies() {
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "GY$1",
+			Grapheme:    "GY$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -720,7 +720,7 @@ func setCurrencies() {
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "HK$1",
+			Grapheme:    "HK$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -885,12 +885,12 @@ func setCurrencies() {
 		Name:  "Jamaican Dollar",
 		Scale: 2,
 		Symbol: &Symbol{
-			Grapheme:    "J$1",
+			Grapheme:    "J$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "J$1",
+			Grapheme:    "J$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -1020,7 +1020,7 @@ func setCurrencies() {
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "CI$1",
+			Grapheme:    "CI$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -1090,7 +1090,7 @@ func setCurrencies() {
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "L$1",
+			Grapheme:    "L$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -1290,7 +1290,7 @@ func setCurrencies() {
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "N$1",
+			Grapheme:    "N$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -1315,12 +1315,12 @@ func setCurrencies() {
 		Name:  "Cordob Oro",
 		Scale: 2,
 		Symbol: &Symbol{
-			Grapheme:    "C$1",
+			Grapheme:    "C$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "C$1",
+			Grapheme:    "C$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -1355,7 +1355,7 @@ func setCurrencies() {
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "NZ$1",
+			Grapheme:    "NZ$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -1570,7 +1570,7 @@ func setCurrencies() {
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "SI$1",
+			Grapheme:    "SI$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -1610,7 +1610,7 @@ func setCurrencies() {
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "S$1",
+			Grapheme:    "S$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -1775,12 +1775,12 @@ func setCurrencies() {
 		Name:  "Trinidad and Tobago Dollar",
 		Scale: 2,
 		Symbol: &Symbol{
-			Grapheme:    "TT$1",
+			Grapheme:    "TT$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "TT$1",
+			Grapheme:    "TT$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -1790,12 +1790,12 @@ func setCurrencies() {
 		Name:  "New Taiwan Dollar",
 		Scale: 0,
 		Symbol: &Symbol{
-			Grapheme:    "NT$1",
+			Grapheme:    "NT$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "NT$1",
+			Grapheme:    "NT$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -1875,12 +1875,12 @@ func setCurrencies() {
 		Name:  "Peso Uruguayo",
 		Scale: 0,
 		Symbol: &Symbol{
-			Grapheme:    "$1U",
+			Grapheme:    "$U",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "$1U",
+			Grapheme:    "$U",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -1955,7 +1955,7 @@ func setCurrencies() {
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "EC$1",
+			Grapheme:    "EC$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
@@ -2025,12 +2025,12 @@ func setCurrencies() {
 		Name:  "Zimbabwe Dollar",
 		Scale: 2,
 		Symbol: &Symbol{
-			Grapheme:    "Z$1",
+			Grapheme:    "Z$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
 		UniqueSymbol: &Symbol{
-			Grapheme:    "Z$1",
+			Grapheme:    "Z$",
 			Template:    "$1$2",
 			RightToLeft: false,
 		},
